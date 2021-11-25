@@ -123,5 +123,6 @@ document.getElementById('modalClose')
     .addEventListener('click', closeModal)
 
 document.getElementById('salvar').addEventListener('click', salveProduct)
+document.getElementById('cancelar').addEventListener('click', closeModal)
 
 document.querySelector('#tableProduct>tbody').addEventListener('click', editDelete)
