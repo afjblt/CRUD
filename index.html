@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="main.js" defer></script>
+    <title>Dev Frontend RJ</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Produtos</h1>
+    </header>
+    <main>
+        <button type="button" class="button black mobile" id="cadastrarProduto">Cadastrar Produto</button>
+        <table id="tableProduct" class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Data de Criação</th>                    
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Produto</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input id="nome" data-index="new" type="text" class="modal-field" placeholder="Nome do Produto" required>
+                    <textarea id="descriçao" class="modal-field" placeholder="Descrição" required></textarea>
+                    <input id="preço" type="text" class="modal-field" placeholder="Preço" value="R$"required>
+                    <input id="data" type="date" class="modal-field" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Developed by Fernando Costa</p>
+    </footer>
+</body>
+</html>
